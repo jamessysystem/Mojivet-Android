@@ -4,4 +4,11 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nav">Close Navigation Drawer</string>
+    <string name="moji_vet">Moji Vet</string>
+    <string name="mojivet_gmail_com">mojivet@gmail.com</string>
+    <string name="appointment">Appointment</string>
+    <string name="veterinarian">Veterinarian</string>
+    <string name="home">Home</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about_us">About Us</string>
 </resources>

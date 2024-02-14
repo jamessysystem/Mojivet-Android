@@ -17,14 +17,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Moji Vet"
+        android:text="@string/moji_vet"
         android:textColor="@android:color/black"
         android:textSize="14sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="mojivet@gmail.com"
+        android:text="@string/mojivet_gmail_com"
         android:textColor="@android:color/black"
         android:textSize="14sp"
         android:layout_marginBottom="16dp"/>
