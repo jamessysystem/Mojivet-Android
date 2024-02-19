@@ -32,7 +32,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:background="@color/lavender"
+                android:background="@color/bright_blue"
                 android:elevation="4dp"
                 android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
@@ -53,8 +53,8 @@
             android:layout_gravity="start"
             android:background="@color/white"
             app:headerLayout="@layout/nav_header"
-            app:itemIconTint="@color/lavender"
-            app:itemTextColor="@color/lavender"
+            app:itemIconTint="@color/bright_blue"
+            app:itemTextColor="@color/bright_blue"
             app:menu="@menu/nav_menu"/>
 
     </androidx.drawerlayout.widget.DrawerLayout>
