@@ -1,15 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nav_bottom.Appointment">
+    tools:context=".nav_bottom.Appointment"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/appointment"/>
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/borger"
+        >
 
-</FrameLayout>
+    </ImageView>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="MojiVet"
+        android:layout_marginTop="50dp"
+
+        android:textSize="35dp"
+        android:layout_marginLeft="140dp"
+
+
+        />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+
+            android:text="Name"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="30dp"
+            android:textAlignment="viewStart">
+
+        </EditText>
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:text="Date"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="30dp">
+
+        </EditText>
+        <EditText
+            android:text="Pet Name"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="30dp">
+
+        </EditText>
+        <EditText
+            android:text="Pet Type"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="30dp">
+
+        </EditText>
+        <Spinner
+            android:text="Choose Veterinarian"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginLeft="30dp">
+
+        </Spinner>
+        <EditText
+            android:text="Concern"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="410dp"
+            android:layout_marginLeft="30dp">
+
+        </EditText>
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginLeft="145dp"
+            android:text="Submit">
+
+        </Button>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
