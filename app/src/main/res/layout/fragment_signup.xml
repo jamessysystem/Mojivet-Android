@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/mojivet"/>
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,7 +43,9 @@
         android:layout_height="wrap_content"
         android:layout_margin="5sp"
         android:hint="@string/juan_dela_cruz"
-        android:drawableLeft="@drawable/baseline_person_24"
+        android:autofillHints="name"
+        android:inputType="text"
+        android:drawableStart="@drawable/baseline_person_24"
         android:drawablePadding="20dp"/>
 
     <TextView
@@ -55,10 +56,12 @@
     <EditText
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_margin="5sp"
+        android:layout_margin="8sp"
+        android:textSize="16sp"
         android:hint="@string/example_gmail_com"
+        android:autofillHints="emailAddress"
         android:inputType="textEmailAddress"
-        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawableStart="@drawable/baseline_email_24"
         android:drawablePadding="20dp"/>
 
     <TextView
@@ -72,7 +75,8 @@
         android:layout_margin="5sp"
         android:hint="@string/char_pass"
         android:inputType="textPassword"
-        android:drawableLeft="@drawable/baseline_lock_24"
+        android:autofillHints="password"
+        android:drawableStart="@drawable/baseline_lock_24"
         android:drawablePadding="20dp"/>
 
     <TextView
@@ -85,14 +89,15 @@
         android:layout_height="wrap_content"
         android:layout_margin="5sp"
         android:hint="@string/char_pass"
+        android:autofillHints="password"
         android:inputType="textPassword"
-        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawableStart="@drawable/baseline_lock_24"
         android:drawablePadding="20dp"/>
 
     <Button
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:text="@string/sign_up"/>
 
 </LinearLayout>
