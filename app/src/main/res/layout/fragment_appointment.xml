@@ -10,28 +10,16 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginLeft="20dp"
-        android:src="@drawable/borger"
-        >
-
-    </ImageView>
 
     <TextView
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="MojiVet"
+        android:text="@string/mojivet"
         android:layout_marginTop="50dp"
-
-        android:textSize="35dp"
-        android:layout_marginLeft="140dp"
-
-
+        android:textSize="35sp"
+        android:layout_marginStart="140dp"
         />
 
     </androidx.cardview.widget.CardView>
@@ -40,62 +28,84 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <EditText
 
-            android:text="Name"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="350dp"
             android:layout_height="55dp"
+            android:hint="@string/name"
             android:layout_marginTop="60dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:hint="@string/date"
+            android:layout_marginTop="130dp"
+            android:layout_marginStart="30dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:hint="@string/pet_name"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="30dp"
             android:textAlignment="viewStart">
 
-        </EditText>
-        <EditText
-            android:layout_width="350dp"
-            android:layout_height="55dp"
-            android:text="Date"
-            android:layout_marginTop="130dp"
-            android:layout_marginLeft="30dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-        </EditText>
-        <EditText
-            android:text="Pet Name"
-            android:layout_width="350dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="200dp"
-            android:layout_marginLeft="30dp">
+        </com.google.android.material.textfield.TextInputLayout>
 
-        </EditText>
-        <EditText
-            android:text="Pet Type"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="350dp"
             android:layout_height="55dp"
+            android:hint="@string/pet_type"
             android:layout_marginTop="270dp"
-            android:layout_marginLeft="30dp">
+            android:layout_marginStart="30dp"
+            android:textAlignment="viewStart">
 
-        </EditText>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <Spinner
-            android:text="Choose Veterinarian"
+            android:id="@+id/spin_vet"
+            android:text="@string/choose_veterinarian"
             android:layout_width="350dp"
             android:layout_height="55dp"
             android:layout_marginTop="340dp"
-            android:layout_marginLeft="30dp">
-
+            android:layout_marginStart="30dp">
         </Spinner>
-        <EditText
-            android:text="Concern"
+
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="350dp"
             android:layout_height="55dp"
+            android:hint="@string/concern"
             android:layout_marginTop="410dp"
-            android:layout_marginLeft="30dp">
+            android:layout_marginStart="30dp"
+            android:textAlignment="viewStart">
 
-        </EditText>
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
         <Button
             android:layout_width="130dp"
             android:layout_height="55dp"
             android:layout_marginTop="480dp"
-            android:layout_marginLeft="145dp"
-            android:text="Submit">
+            android:layout_marginStart="145dp"
+            android:text="@string/submit">
 
         </Button>
 
