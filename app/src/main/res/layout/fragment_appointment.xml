@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".nav_bottom.Appointment"
+    android:gravity="center"
     android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
@@ -42,7 +43,8 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
+        <Spinner
+            android:id="@+id/spin_date"
             android:layout_width="350dp"
             android:layout_height="55dp"
             android:hint="@string/date"
@@ -81,7 +83,7 @@
         <Spinner
             android:id="@+id/spin_vet"
             android:text="@string/choose_veterinarian"
-            android:layout_width="350dp"
+            android:layout_width="match_parent"
             android:layout_height="55dp"
             android:layout_marginTop="340dp"
             android:layout_marginStart="30dp">
