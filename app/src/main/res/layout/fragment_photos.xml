@@ -3,13 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".nav_drawer.Photos">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:gravity="center"-->
+<!--        android:text="Photos"/>-->
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Photos" />
+        android:layout_height="600dp"
+        app:cardBackgroundColor="@color/lavender"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="20dp"
+        >
+
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:iss_auto_cycle="true"
+            app:iss_delay="0"
+            app:iss_placeholder="@color/gray"
+            app:iss_error_image="@color/gray"
+            app:iss_corner_radius="5"
+            app:iss_selected_dot="@drawable/default_selected_dot"
+            app:iss_unselected_dot="@drawable/default_unselected_dot"
+            app:iss_period="5000"
+            tools:ignore="MissingConstraints"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
 
 </FrameLayout>
