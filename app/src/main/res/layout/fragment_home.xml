@@ -9,27 +9,10 @@
     <!-- TODO: Update blank fragment layout -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="45dp"
-            android:layout_marginStart="20dp"
-            android:src="@drawable/borger"
-            android:contentDescription="@string/cats_and_dogs">
-        </ImageView>
+        android:layout_height="50dp">
 
-        <TextView
 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="MojiVet"
-            android:layout_marginTop="50dp"
-            android:textSize="35sp"
-            android:layout_marginStart="140dp"
-            android:textStyle="bold"
-            />
+
 
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
