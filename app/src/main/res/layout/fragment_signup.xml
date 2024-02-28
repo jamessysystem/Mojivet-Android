@@ -133,7 +133,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="16dp"
-            android:background="@drawable/text_border">
+            android:background="@drawable/text_border"
+            android:gravity="center">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -146,7 +147,8 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:text="@string/log_in_here"
-                android:textColor="@color/bright_blue" />
+                android:textColor="@color/bright_blue"/>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
