@@ -13,16 +13,23 @@
     <string name="about_us">About Us</string>
     <string name="mojivet">Mojivet</string>
     <string name="forgot_password">Forgot Password</string>
-    <string name="email">EMAIL</string>
+    <string name="email">Email</string>
     <string name="example_gmail_com">example@gmail.com</string>
     <string name="send_code">Send Code</string>
     <string name="create_new_account">Create New Account</string>
     <string name="already_registered">Already Registered?</string>
     <string name="log_in_here">Log in here.</string>
-    <string name="name">NAME</string>
+    <string name="name">Name</string>
     <string name="juan_dela_cruz">Juan Dela Cruz</string>
-    <string name="password">PASSWORD</string>
-    <string name="confirm_password">CONFIRM PASSWORD</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
     <string name="char_pass">********</string>
     <string name="sign_up">Sign up</string>
+    <string name="date">Date</string>
+    <string name="pet_name">Pet Name</string>
+    <string name="pet_type">Pet Type</string>
+    <string name="submit">Submit</string>
+    <string name="concern">Concern</string>
+    <string name="choose_veterinarian">Choose Veterinarian</string>
+    <string name="cats_and_dogs">Cats and dogs</string>
 </resources>
