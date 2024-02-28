@@ -31,7 +31,7 @@ private const val ARG_PARAM2 = "param2"
 class Appointment : Fragment() {
     lateinit var tvDate : TextView
     private lateinit var spinner: Spinner
-    private lateinit var datespin: Spinner
+    private lateinit var datebut: Button
     private val calendar = Calendar.getInstance()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -44,7 +44,7 @@ class Appointment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         spinner = view.findViewById(R.id.spin_vet)
-        datespin = view.findViewById(R.id.spin_date)
+        datebut = view.findViewById(R.id.spin_date)
 
 
         val choices = arrayOf("Veterinarian 1", "Veterinarian 2", "Veterinarian 3")
@@ -64,7 +64,7 @@ class Appointment : Fragment() {
                 // Do something when nothing is selected
             }
         }
-        datespin.setOnClickListener {
+        datebut.setOnClickListener {
             showDatePicker()
         }
     }

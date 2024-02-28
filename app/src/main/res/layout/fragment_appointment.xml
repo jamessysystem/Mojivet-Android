@@ -43,7 +43,7 @@
 
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Spinner
+        <Button
             android:id="@+id/spin_date"
             android:layout_width="350dp"
             android:layout_height="55dp"
