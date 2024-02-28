@@ -14,15 +14,19 @@
     <string name="mojivet">Mojivet</string>
     <string name="forgot_password">Forgot Password</string>
     <string name="email">EMAIL</string>
-    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="example_gmail_com">Enter Email</string>
     <string name="send_code">Send Code</string>
     <string name="create_new_account">Create New Account</string>
     <string name="already_registered">Already Registered?</string>
     <string name="log_in_here">Log in here.</string>
     <string name="name">NAME</string>
-    <string name="juan_dela_cruz">Juan Dela Cruz</string>
+    <string name="juan_dela_cruz">First Name</string>
     <string name="password">PASSWORD</string>
     <string name="confirm_password">CONFIRM PASSWORD</string>
-    <string name="char_pass">********</string>
+    <string name="char_pass">Password</string>
     <string name="sign_up">Sign up</string>
+    <string name="lname">Last Name</string>
+    <string name="cpass">Confirm Password</string>
+    <string name="emailll">Enter Email</string>
+    <string name="passs">Enter Password</string>
 </resources>
