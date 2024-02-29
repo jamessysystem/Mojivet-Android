@@ -21,7 +21,12 @@
         android:layout_marginTop="50dp"
         android:textSize="28sp"
         android:layout_gravity="center_horizontal"
-        />
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowColor="#C0C0C0"
+        android:shadowRadius="3"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -39,7 +44,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_border"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -61,7 +67,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_border"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,7 +82,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_border"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -98,7 +106,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_border"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
