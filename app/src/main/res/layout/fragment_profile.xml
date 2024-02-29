@@ -8,19 +8,12 @@
 
 
 
-    <ImageView
-        android:id="@+id/profileImage"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/baseline_face_24" />
+
 
     <Button
         android:id="@+id/selectImageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profileImage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="Select Photo"
@@ -86,7 +79,6 @@
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profileImage"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="240dp"
         android:text="Save"
