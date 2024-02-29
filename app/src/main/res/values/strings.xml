@@ -44,4 +44,7 @@
     <string name="create_an_appointment">Create an Appointment</string>
     <string name="login">Login</string>
     <string name="first_name">First Name</string>
+    <string name="dhaveacc">"Don't Have a Account"</string>
+    <string name="sghere">Sign Up Here</string>
+
 </resources>
