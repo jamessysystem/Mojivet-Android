@@ -162,7 +162,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:gravity="center"
-            android:padding="8dp">
+            android:padding="8dp"
+            android:background="@drawable/text_border">
 
             <TextView
                 android:layout_width="wrap_content"
