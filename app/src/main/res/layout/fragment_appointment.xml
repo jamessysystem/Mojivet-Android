@@ -1,15 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nav_bottom.Appointment">
+    tools:context=".nav_bottom.Appointment"
+    android:gravity="center"
+    android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="@string/appointment"/>
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/create_an_appointment"
+        android:layout_marginTop="50dp"
+        android:textSize="28sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:hint="@string/name"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/spin_date"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:hint="@string/date"
+            android:layout_marginTop="130dp"
+            android:layout_marginStart="30dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:hint="@string/pet_name"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="30dp"
+            android:textAlignment="viewStart">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:hint="@string/pet_type"
+            android:layout_marginTop="270dp"
+            android:layout_marginStart="30dp"
+            android:textAlignment="viewStart">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spin_vet"
+            android:text="@string/choose_veterinarian"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginStart="30dp">
+        </Spinner>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:hint="@string/concern"
+            android:layout_marginTop="410dp"
+            android:layout_marginStart="30dp"
+            android:textAlignment="viewStart">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="480dp"
+            android:layout_marginStart="145dp"
+            android:text="@string/submit">
+
+        </Button>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
