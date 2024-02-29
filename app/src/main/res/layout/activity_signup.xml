@@ -61,7 +61,8 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName"
+            android:background="@drawable/text_border"/>
 
     </com.google.android.material.textfield.TextInputLayout>
     </androidx.cardview.widget.CardView>
@@ -84,7 +85,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"/>
+                android:inputType="textEmailAddress"
+                android:background="@drawable/text_border"/>
 
         </com.google.android.material.textfield.TextInputLayout>
     </androidx.cardview.widget.CardView>
@@ -107,7 +109,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword"
+                android:background="@drawable/text_border"/>
 
         </com.google.android.material.textfield.TextInputLayout>
     </androidx.cardview.widget.CardView>
@@ -129,7 +132,8 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword"
+                android:background="@drawable/text_border"/>
 
         </com.google.android.material.textfield.TextInputLayout>
     </androidx.cardview.widget.CardView>

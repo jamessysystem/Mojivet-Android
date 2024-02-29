@@ -16,7 +16,13 @@
             android:text="@string/about_us"
             android:layout_marginTop="50dp"
             android:textSize="35sp"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:shadowColor="#C0C0C0"
+            android:shadowDy="2"
+            android:shadowDx="2"/>
+
 
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
