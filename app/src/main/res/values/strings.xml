@@ -32,4 +32,8 @@
     <string name="concern">Concern</string>
     <string name="choose_veterinarian">Choose Veterinarian</string>
     <string name="cats_and_dogs">Cats and dogs</string>
+    <string name="lname">Last Name</string>
+    <string name="cpass">Confirm Password</string>
+    <string name="emailll">Enter Email</string>
+    <string name="passs">Enter Password</string>
 </resources>
