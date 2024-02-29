@@ -32,4 +32,16 @@
     <string name="concern">Concern</string>
     <string name="choose_veterinarian">Choose Veterinarian</string>
     <string name="cats_and_dogs">Cats and dogs</string>
+    <string name="lname">Last Name</string>
+    <string name="cpass">Confirm Password</string>
+    <string name="emailll">Enter Email</string>
+    <string name="passs">Enter Password</string>
+    <string name="dog">Dog</string>
+    <string name="welcome_to_mojivet">Welcome to MojiVet!</string>
+    <string name="schedule_your_pet_s_appointment_easily_and_experience_tailored_veterinary_excellence">Schedule your pet\'s appointment easily and experience tailored veterinary excellence</string>
+    <string name="paws_and_hooves_hearts_and_health_where_compassion_meets_care">PAWS and Hooves, Hearts and Health - Where Compassion Meets Care!</string>
+    <string name="create_and_manage_personalized_profiles_for_each_of_your_pets_keep_track_of_their_medical_history_vaccination_records_and_communicate_directly_with_our_team_through_the_platform_ask_questions_share_concerns_and_receive_guidance_withoud_the_need_for_a_phone_call">Create and manage personalized profiles for each of your pets. Keep track of their medical history, vaccination records, and communicate directly with our team through the platform. Ask questions, share concerns, and receive guidance withoud the need for a phone call.</string>
+    <string name="create_an_appointment">Create an Appointment</string>
+    <string name="login">Login</string>
+    <string name="first_name">First Name</string>
 </resources>

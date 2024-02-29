@@ -17,10 +17,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="@string/mojivet"
+        android:text="@string/create_an_appointment"
         android:layout_marginTop="50dp"
-        android:textSize="35sp"
-        android:layout_marginStart="140dp"
+        android:textSize="28sp"
+        android:layout_gravity="center_horizontal"
         />
 
     </androidx.cardview.widget.CardView>
@@ -48,7 +48,6 @@
             android:layout_width="350dp"
             android:layout_height="55dp"
             android:hint="@string/date"
-            android:inputType="date"
             android:layout_marginTop="130dp"
             android:layout_marginStart="30dp"/>
 
