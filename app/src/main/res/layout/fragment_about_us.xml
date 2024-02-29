@@ -6,64 +6,50 @@
     tools:context=".nav_bottom.Appointment"
     android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="45dp"
-            android:layout_marginStart="20dp"
-            android:src="@drawable/borger"
-            android:contentDescription="@string/cats_and_dogs">
-        </ImageView>
-
         <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="About Us"
+            android:text="@string/about_us"
             android:layout_marginTop="50dp"
-            android:textSize="35dp"
-            android:layout_marginLeft="85dp"
-
-
-            />
+            android:textSize="35sp"
+            android:layout_gravity="center_horizontal"/>
 
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="400dp"
-            android:src="@drawable/cat_dog"
-            tools:visibility="visible">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:src="@drawable/cat_dog"
+                tools:visibility="visible"
+                android:contentDescription="@string/cats_and_dogs">
+            </ImageView>
 
-        </ImageView>
+            <TextView
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="380dp"
+                android:text="@string/paws_and_hooves_hearts_and_health_where_compassion_meets_care"
+                android:textSize="25sp"
+                android:textStyle="bold">
 
-        <TextView
-            android:layout_width="355dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="380dp"
-            android:text="PAWS and Hooves, Hearts and Health - Where Compassion Meets Care!"
-            android:textSize="25dp"
-            android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:layout_width="370dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="490dp"
+                android:text="@string/create_and_manage_personalized_profiles_for_each_of_your_pets_keep_track_of_their_medical_history_vaccination_records_and_communicate_directly_with_our_team_through_the_platform_ask_questions_share_concerns_and_receive_guidance_withoud_the_need_for_a_phone_call"
+                android:textSize="15sp"
+                android:layout_marginStart="25dp">
 
-        </TextView>
-        <TextView
-            android:layout_width="370dp"
-            android:layout_height="200dp"
-            android:layout_marginTop="490dp"
-            android:text="Create and manage personalized profiles for each of your pets. Keep track of their medical history, vaccination records, and communicate directly with our team through the platform. Ask questions, share concerns, and receive guidance withoud the need for a phone call. "
-            android:textSize="15dp"
-            android:layout_marginLeft="25dp">
+            </TextView>
 
-        </TextView>
-
-    </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 </LinearLayout>
