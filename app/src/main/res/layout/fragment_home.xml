@@ -4,17 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".nav_bottom.Appointment"
+    android:id="@+id/home"
     android:orientation="vertical">
 
     <!-- TODO: Update blank fragment layout -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="50dp">
-
-
-
-
-    </androidx.cardview.widget.CardView>
+        android:layout_height="wrap_content"/>
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,7 +19,8 @@
         <ImageView
             android:src="@drawable/beauty"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:contentDescription="@string/dog">
 
         </ImageView>
 
@@ -31,24 +28,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="240dp"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textColor="#000000"
-            android:text="Welcome to MojiVet!"
-            android:textStyle="italic"
-            android:layout_marginLeft="20dp">
+            android:text="@string/welcome_to_mojivet"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp">
 
         </TextView>
         <TextView
-            android:text="Schedule your pet's
-appointment easily and experience tailored
-veterinary excellence"
+            android:text="@string/schedule_your_pet_s_appointment_easily_and_experience_tailored_veterinary_excellence"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:textStyle="italic"
+            android:textSize="16sp"
+            android:textStyle="bold"
             android:textColor="#000000"
             android:layout_marginTop="260dp"
-            android:layout_marginLeft="20dp">
+            android:layout_marginStart="20dp">
 
         </TextView>
 
