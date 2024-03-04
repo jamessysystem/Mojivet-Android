@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nav_drawer.Contact_us">
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".profiling.Signup">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cntus"
         android:gravity="center"
-        android:text="@string/contact_us" />
+        android:textSize="50sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:shadowColor="#C0C0C0"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"/>
+    
 
-</FrameLayout>
+    
+    
+    
+</LinearLayout>
+
+      
+        
+   
