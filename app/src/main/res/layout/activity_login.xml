@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".profiling.Signup"
-    android:background="@drawable/yellowbg">
+    android:background="@drawable/vetbg">
 
 
     <TextView
@@ -43,33 +42,42 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/email"
-        android:padding="10dp"
-        card_view:startIconDrawable="@drawable/baseline_email_24">
 
-        <com.google.android.material.textfield.TextInputEditText
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
-            android:background="@drawable/textborder1"/>
-    </com.google.android.material.textfield.TextInputLayout>
+            android:orientation="vertical"
+            android:padding="30dp">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/password"
-        android:padding="10dp"
-        card_view:startIconDrawable="@drawable/baseline_lock_24">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:background="@drawable/textborder1"/>
-    </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/textborder1"
+                    android:textStyle="bold"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/password"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:background="@drawable/textborder1"
+                    android:textStyle="bold"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
 
 
     <View
@@ -107,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/dhaveacc"
-                android:textSize="16dp"
+                android:textSize="17sp"
                 android:textStyle="bold"/>
 
             <TextView
@@ -116,7 +124,7 @@
                 android:text="@string/sghere"
                 android:clickable="true"
                 android:focusable="true"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 android:textColor="@color/bright_blue"
                 android:textStyle="bold"/>
 
