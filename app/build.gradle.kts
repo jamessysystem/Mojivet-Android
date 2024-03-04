@@ -49,11 +49,15 @@ dependencies {
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
     //GSON
-    implementation("com.google.code.gson:gson:2.10")
+    implementation("com.google.code.gson:gson:2.10.0")
 
     // API REQUEST
     implementation("com.android.volley:volley:1.2.1")
 
     // IMAGE SLIDER
     implementation("com.github.denzcoskun:ImageSlideshow:0.1.0")
+
+    // COROUTINE
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2")
 }
