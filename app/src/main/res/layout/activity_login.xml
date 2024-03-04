@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:background="@drawable/text_border"/>
+            android:background="@drawable/textborder1"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -68,7 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:background="@drawable/text_border"/>
+            android:background="@drawable/textborder1"/>
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -100,7 +100,7 @@
             android:orientation="horizontal"
             android:gravity="center"
             android:padding="10dp"
-            android:background="@drawable/text_border">
+            android:background="@drawable/textborder1">
 
             <TextView
                 android:layout_width="wrap_content"
