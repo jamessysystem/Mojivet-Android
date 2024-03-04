@@ -1,15 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nav_drawer.Contact_us">
+    tools:context=".nav_drawer.Photos"
+    android:orientation="vertical"
+    android:background="#F3B95F">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="@string/contact_us" />
+        android:text="Contact Us"
+        android:textSize="30dp"
+        android:textStyle="italic" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp">
+        <ImageButton
+            android:layout_marginTop="30dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/instagram"
+            android:background="#F3B95F">
 
-</FrameLayout>
+        </ImageButton>
+
+        <ImageButton
+            android:background="#F3B95F"
+            android:layout_marginTop="30dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/twitter">
+
+        </ImageButton>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:background="#F3B95F"
+            android:layout_marginTop="30dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/fb">
+
+        </ImageButton>
+        <ImageButton
+            android:background="#F3B95F"
+            android:layout_marginTop="30dp"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/google">
+
+        </ImageButton>
+
+    </LinearLayout>
+
+</LinearLayout>
