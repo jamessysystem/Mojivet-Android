@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".profiling.Signup"
-    android:background="@drawable/headerbg">
+    android:background="@drawable/yellowbg">
 
 
     <TextView
