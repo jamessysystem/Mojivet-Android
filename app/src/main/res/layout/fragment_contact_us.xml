@@ -3,9 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".profiling.Signup">
+    tools:context=".profiling.Signup"
+    android:layout_marginTop="-20dp">
 
     <ImageView
         android:layout_width="match_parent"
@@ -117,7 +119,7 @@
                     android:gravity="center"
                     android:text="@string/loc"
                     android:textStyle="bold"
-                    android:textSize="17dp"
+                    android:textSize="17sp"
                     android:layout_gravity="center_horizontal"/>
 
                 <TextView
