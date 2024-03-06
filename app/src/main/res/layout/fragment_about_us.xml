@@ -16,7 +16,14 @@
             android:text="@string/about_us"
             android:layout_marginTop="50dp"
             android:textSize="35sp"
-            android:layout_gravity="center_horizontal"/>
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:shadowColor="#C0C0C0"
+            android:shadowDy="2"
+            android:shadowDx="2"
+            android:shadowRadius="3"/>
+
 
     </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
@@ -38,7 +45,11 @@
                 android:layout_marginTop="380dp"
                 android:text="@string/paws_and_hooves_hearts_and_health_where_compassion_meets_care"
                 android:textSize="25sp"
-                android:textStyle="bold">
+                android:textStyle="bold"
+                android:shadowRadius="3"
+                android:shadowColor="#C0C0C0"
+                android:shadowDy="2"
+                android:shadowDx="2">
 
             </TextView>
             <TextView

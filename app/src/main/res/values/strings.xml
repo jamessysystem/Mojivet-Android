@@ -44,4 +44,17 @@
     <string name="create_an_appointment">Create an Appointment</string>
     <string name="login">Login</string>
     <string name="first_name">First Name</string>
+    <string name="dhaveacc">"Don't Have an Account?"</string>
+    <string name="sghere">Sign Up Here</string>
+    <string name="cntus">Contact Us</string>
+    <string name="phnum">Telephone No:</string>
+    <string name="numph">090-080-0650 / 090-070-0430</string>
+    <string name="eadd">Email Address:</string>
+    <string name="adde">mojivet@gmail.com</string>
+    <string name="loc">Location:</string>
+    <string name="locadd">123 AB Fernandez,Dagupan City</string>
+
+
+
+
 </resources>

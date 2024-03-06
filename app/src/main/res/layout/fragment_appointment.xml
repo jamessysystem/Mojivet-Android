@@ -21,7 +21,12 @@
         android:layout_marginTop="50dp"
         android:textSize="28sp"
         android:layout_gravity="center_horizontal"
-        />
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowColor="#C0C0C0"
+        android:shadowRadius="3"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -39,7 +44,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/textborder1"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -49,7 +55,9 @@
             android:layout_height="55dp"
             android:hint="@string/date"
             android:layout_marginTop="130dp"
-            android:layout_marginStart="30dp"/>
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="350dp"
@@ -61,7 +69,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:background="@drawable/textborder1"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -75,7 +84,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:background="@drawable/textborder1"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -98,7 +108,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:background="@drawable/textborder1"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -107,7 +118,9 @@
             android:layout_height="55dp"
             android:layout_marginTop="480dp"
             android:layout_marginStart="145dp"
-            android:text="@string/submit">
+            android:text="@string/submit"
+            android:textSize="18dp"
+            android:textStyle="bold">
 
         </Button>
 
