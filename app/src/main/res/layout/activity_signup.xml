@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/headerbg"
+    android:background="@drawable/bgyellowwave"
     tools:context=".profiling.Signup">
 
 

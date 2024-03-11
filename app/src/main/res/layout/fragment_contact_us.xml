@@ -2,71 +2,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".nav_drawer.Photos"
     android:orientation="vertical"
-    android:background="#F3B95F">
+    android:background="@drawable/bgyellow">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:text="Contact Us"
-        android:textSize="30dp"
-        android:textStyle="italic" />
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textColor="#FFFF"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="70dp">
-        <ImageButton
-            android:layout_marginTop="30dp"
+        android:layout_marginTop="70dp"
+        android:gravity="center">
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="170dp"
             android:layout_height="170dp"
-            android:layout_marginLeft="15dp"
-            android:src="@drawable/instagram"
-            android:background="#F3B95F">
+            android:layout_margin="8dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp">
 
-        </ImageButton>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/instagram"
+                android:background="@android:color/transparent"
+                />
+        </com.google.android.material.card.MaterialCardView>
 
-        <ImageButton
-            android:background="#F3B95F"
-            android:layout_marginTop="30dp"
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="170dp"
             android:layout_height="170dp"
-            android:layout_marginLeft="35dp"
-            android:src="@drawable/twitter">
+            android:layout_margin="8dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp">
 
-        </ImageButton>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/twitter"
+                android:background="@android:color/transparent"
+                />
+        </com.google.android.material.card.MaterialCardView>
 
 
 
     </LinearLayout>
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
-        <ImageButton
-            android:background="#F3B95F"
-            android:layout_marginTop="30dp"
+        android:gravity="center">
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="170dp"
             android:layout_height="170dp"
-            android:layout_marginLeft="15dp"
-            android:src="@drawable/fb">
+            android:layout_margin="8dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp">
 
-        </ImageButton>
-        <ImageButton
-            android:background="#F3B95F"
-            android:layout_marginTop="30dp"
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fb"
+                android:background="@android:color/transparent"
+                />
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
             android:layout_width="170dp"
             android:layout_height="170dp"
-            android:layout_marginLeft="35dp"
-            android:src="@drawable/google">
+            android:layout_margin="8dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp"
+            >
 
-        </ImageButton>
-
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/google"
+                android:background="@android:color/transparent"
+                />
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 
-</LinearLayout>
+</LinearLayout> 
+
+

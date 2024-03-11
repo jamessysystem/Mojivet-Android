@@ -4,11 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".nav_bottom.Appointment"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/bgyellow">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgyellow">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
