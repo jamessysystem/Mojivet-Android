@@ -13,7 +13,6 @@ import com.example.mojivet.nav_drawer.Contact_us
 import com.example.mojivet.nav_bottom.Home
 import com.example.mojivet.nav_drawer.Photos
 import com.example.mojivet.nav_drawer.Profile
-import com.example.mojivet.nav_drawer.Veterinarian
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 
@@ -52,10 +51,10 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
     override fun onNavigationItemSelected(item:MenuItem):Boolean {
         when(item.itemId){
+            R.id.nav_home -> supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, Home()).commit()
             R.id.nav_profile -> supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, Profile()).commit()
-            R.id.nav_veterinarian -> supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, Veterinarian()).commit()
             R.id.nav_photos -> supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, Photos()).commit()
             R.id.nav_contact_us -> supportFragmentManager.beginTransaction()

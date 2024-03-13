@@ -17,17 +17,6 @@ import com.example.mojivet.R
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [Appointment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class Appointment : Fragment() {
     lateinit var tvDate : TextView
     private lateinit var spinner: Spinner
