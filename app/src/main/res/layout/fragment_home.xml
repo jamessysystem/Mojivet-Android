@@ -15,14 +15,22 @@
             android:contentDescription="@string/dog">
         </ImageView>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80000000"
+            android:layout_marginTop="-800dp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="-500dp"
-            android:textSize="20sp"
-            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:letterSpacing=".05"
             android:text="@string/welcome_to_mojivet"
             android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
             android:layout_marginStart="20dp">
 
         </TextView>

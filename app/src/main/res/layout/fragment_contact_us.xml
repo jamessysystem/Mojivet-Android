@@ -7,21 +7,17 @@
     android:orientation="vertical"
     android:gravity="center"
     tools:context=".profiling.Signup"
-    android:layout_marginTop="-20dp">
+    android:background="@drawable/gradient_yellow"
+    android:layout_marginTop="-30dp">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="240dp"
         android:layout_gravity="top"
         android:scaleType="centerCrop"
-        android:src="@drawable/contact">
-
+        android:src="@drawable/contact"
+        android:contentDescription="@string/contactmascot">
     </ImageView>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="28dp"/>
-
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
@@ -53,6 +49,7 @@
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:padding="20dp"
+                android:layout_marginBottom="20dp"
                 android:background="@drawable/textborder1">
 
                 <TextView
@@ -72,17 +69,14 @@
                     android:textStyle="bold"/>
             </LinearLayout>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:padding="20dp"
-                android:background="@drawable/textborder1">
+                android:background="@drawable/textborder1"
+                android:layout_marginBottom="20dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -100,10 +94,6 @@
                     android:textSize="18sp"
                     android:textStyle="bold"/>
             </LinearLayout>
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="20dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -147,14 +137,18 @@
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:layout_margin="10dp"
             android:src="@drawable/fb"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:contentDescription="@string/facebook"/>
 
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:layout_margin="10dp"
             android:src="@drawable/ig"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:contentDescription="@string/instagram"/>
 
     </LinearLayout>
 

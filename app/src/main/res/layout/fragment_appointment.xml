@@ -57,7 +57,7 @@
             android:layout_marginTop="130dp"
             android:layout_marginStart="30dp"
             android:textStyle="bold"
-            android:textSize="18dp"/>
+            android:textSize="18sp"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="350dp"
@@ -92,10 +92,10 @@
         <Spinner
             android:id="@+id/spin_vet"
             android:text="@string/choose_veterinarian"
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="55dp"
             android:layout_marginTop="340dp"
-            android:layout_marginStart="30dp">
+            android:layout_gravity="center">
         </Spinner>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -119,7 +119,7 @@
             android:layout_marginTop="480dp"
             android:layout_marginStart="145dp"
             android:text="@string/submit"
-            android:textSize="18dp"
+            android:textSize="18sp"
             android:textStyle="bold">
 
         </Button>

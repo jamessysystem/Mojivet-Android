@@ -14,17 +14,17 @@ class Photos : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_photos, container, false)
+        return inflater.inflate(R.layout.fragment_photos, container, false)
+    }
+    override fun onResume() {
+        super.onResume()
+        // Hide the bottom navigation view
+        requireActivity().findViewById<View>(R.id.bottomNavigationView).visibility = View.GONE
+    }
 
-//        val imageSlider = view.findViewById<ImageSlider>(R.id.image_slider)
-//        val imageList = ArrayList<SlideModel>()
-
-//        imageList.add(SlideModel("https://i.natgeofe.com/n/abb126f7-eed1-437b-9c40-760fda76032f/05-dog-portraits-FP-Jpegs-5_2x3.jpg","Asongot"))
-////        imageList.add(SlideModel("",""))
-////        imageList.add(SlideModel("",""))
-//
-//        imageSlider.setImageList(imageList, com.denzcoskun.imageslider.constants.ScaleTypes.FIT)
-//        // Inflate the layout for this fragment
-        return view
+    override fun onPause() {
+        super.onPause()
+        // Show the bottom navigation view
+        requireActivity().findViewById<View>(R.id.bottomNavigationView).visibility = View.VISIBLE
     }
 }

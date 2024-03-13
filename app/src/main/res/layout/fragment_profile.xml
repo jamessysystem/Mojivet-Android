@@ -6,10 +6,6 @@
     tools:context=".nav_drawer.Profile"
     android:background="@drawable/headerbg">
 
-
-
-
-
     <Button
         android:id="@+id/selectImageButton"
         android:layout_width="wrap_content"
@@ -38,7 +34,7 @@
                 android:id="@+id/emailInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email">
+                android:hint="@string/email">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/emailEditText"
@@ -61,7 +57,7 @@
                 android:id="@+id/nameInputLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name">
+                android:hint="@string/name">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/nameEditText"
@@ -81,6 +77,6 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="240dp"
-        android:text="Save"
+        android:text="@string/save"
         android:textSize="20sp"/>
 </RelativeLayout>
