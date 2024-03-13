@@ -15,18 +15,9 @@
         android:theme="@style/Theme.Mojivet"
         tools:targetApi="31">
         <activity
-            android:name=".profiling.ForgotPassword"
-            android:exported="false" />
-        <activity
-            android:name=".profiling.Signup"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".profiling.Login"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
