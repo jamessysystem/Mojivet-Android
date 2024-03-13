@@ -53,8 +53,14 @@
     <string name="adde">mojivet@gmail.com</string>
     <string name="loc">Location:</string>
     <string name="locadd">123 AB Fernandez,Dagupan City</string>
-
-
+    <string name="profile">Profile</string>
+    <string name="photos">Photos</string>
+    <string name="logout">Logout</string>
+    <string name="logo">logo</string>
+    <string name="contactmascot">contactmascot</string>
+    <string name="facebook">facebook</string>
+    <string name="instagram">instagram</string>
+    <string name="save">Save</string>
 
 
 </resources>
