@@ -3,16 +3,19 @@ package com.example.mojivet
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.widget.Toolbar
+import com.example.mojivet.authentication.AuthenticationManager
 import com.example.mojivet.nav_bottom.Appointment
 import com.example.mojivet.nav_drawer.About_us
 import com.example.mojivet.nav_drawer.Contact_us
 import com.example.mojivet.nav_bottom.Home
 import com.example.mojivet.nav_drawer.Photos
 import com.example.mojivet.nav_drawer.Profile
+import com.example.mojivet.profiling.Login
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.navigation.NavigationView
 
@@ -25,6 +28,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val authManager = AuthenticationManager(this)
+        val storedToken = authManager.getStoredToken()
+
+
 
         drawerLayout = findViewById(R.id.drawer_layout)
         bottomNavigationView = findViewById(R.id.bottomNavigationView)
@@ -39,11 +47,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawerLayout.addDrawerListener(toogle)
         toogle.syncState()
 
-        if (savedInstanceState == null){
+        if (storedToken == null){
+            supportFragmentManager.beginTransaction().replace(R.id.fragment_container, Login()).commit()
+            bottomNavigationView.visibility = View.GONE
+            toolbar.visibility = View.GONE
+        } else if (savedInstanceState == null){
+
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, Home()).commit()
             navigationView.setCheckedItem(R.id.home)
         }
+
+
         bottomNavigationView.setOnNavigationItemSelectedListener { menuItem ->
             handleBottomNavItemClick(menuItem)
             true
