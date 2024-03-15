@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".nav_bottom.Appointment"
+    tools:context=".nav_drawer.About_us"
+    android:fillViewport="true"
     android:orientation="vertical">
 
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/about_us"
-            android:layout_marginTop="50dp"
-            android:textSize="35sp"
-            android:layout_gravity="center_horizontal"
-            android:textStyle="bold"
-            android:textColor="#333333"
-            android:shadowColor="#C0C0C0"
-            android:shadowDy="2"
-            android:shadowDx="2"
-            android:shadowRadius="3"/>
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/about_us"
+        android:layout_marginTop="10dp"
+        android:textSize="35sp"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:shadowColor="#C0C0C0"
+        android:shadowDy="2"
+        android:shadowDx="2"
+        android:shadowRadius="3"/>
 
-    </androidx.cardview.widget.CardView>
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -39,10 +45,10 @@
             </ImageView>
 
             <TextView
-                android:layout_width="355dp"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="380dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-30dp"
                 android:text="@string/paws_and_hooves_hearts_and_health_where_compassion_meets_care"
                 android:textSize="25sp"
                 android:textStyle="bold"
@@ -53,14 +59,15 @@
 
             </TextView>
             <TextView
-                android:layout_width="370dp"
+                android:layout_width="320dp"
                 android:layout_height="200dp"
-                android:layout_marginTop="490dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:text="@string/create_and_manage_personalized_profiles_for_each_of_your_pets_keep_track_of_their_medical_history_vaccination_records_and_communicate_directly_with_our_team_through_the_platform_ask_questions_share_concerns_and_receive_guidance_withoud_the_need_for_a_phone_call"
                 android:textSize="15sp"
-                android:layout_marginStart="25dp">
-
+                android:fontFamily="sans-serif">
             </TextView>
-
+        </LinearLayout>
         </androidx.cardview.widget.CardView>
-</LinearLayout>
+    </LinearLayout>
+</ScrollView>
