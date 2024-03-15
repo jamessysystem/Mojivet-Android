@@ -29,7 +29,7 @@
                     android:id="@+id/emailEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/textborder1"/>
+                    android:background="@drawable/textborder1" />
 
             </com.google.android.material.textfield.TextInputLayout>
         </androidx.cardview.widget.CardView>
@@ -67,5 +67,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="240dp"
         android:text="@string/save"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:backgroundTint="@color/lavender"/>
 </RelativeLayout>

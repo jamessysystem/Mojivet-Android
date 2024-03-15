@@ -13,16 +13,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="240dp"
-        android:layout_gravity="top"
-        android:scaleType="centerCrop"
-        android:src="@drawable/contact"
-        android:contentDescription="@string/contactmascot">
-    </ImageView>
 
-    <androidx.cardview.widget.CardView
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_gravity="top"
+            android:contentDescription="@string/contactmascot"
+            android:scaleType="centerCrop"
+            android:src="@drawable/contact">
+        </ImageView>
+
+        <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
