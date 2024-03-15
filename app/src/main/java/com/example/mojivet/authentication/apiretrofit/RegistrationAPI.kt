@@ -8,7 +8,7 @@ import retrofit2.http.Body
 import retrofit2.http.POST
 
 interface RegistrationAPI {
-    @POST("/api/registration-retrofit")
-    fun registration(@Body registration: RegistrationRequest): Call<TokenResponse>
+    @POST("/api/register-retrofit")
+    fun registration(@Body registrationRequest: RegistrationRequest): Call<TokenResponse>
 
 }

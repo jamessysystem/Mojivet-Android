@@ -40,6 +40,7 @@
                 android:hint="@string/name">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/apt_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/textborder1"
@@ -55,6 +56,7 @@
                 android:hint="@string/email">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/apt_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/textborder1"
@@ -86,6 +88,7 @@
                 android:hint="@string/pet_name">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/apt_petname"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/textborder1"
@@ -116,6 +119,7 @@
                 android:hint="@string/concern">
 
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/apt_concern"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/textborder1" />
@@ -123,6 +127,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
+                android:id="@+id/apt_submit"
                 android:layout_width="130dp"
                 android:layout_height="55dp"
                 android:layout_gravity="center"
@@ -133,7 +138,7 @@
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="90dp" />
+                android:layout_height="90dp"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

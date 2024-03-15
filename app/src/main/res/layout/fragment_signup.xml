@@ -67,7 +67,8 @@
                 android:id="@+id/et_signname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'" />
+                android:inputType="textPersonName"
+                android:maxLength="255" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -94,7 +95,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:hint="@string/password"
+            app:endIconMode="password_toggle"
             app:errorEnabled="true"
+            app:errorIconDrawable="@null"
             app:startIconDrawable="@drawable/baseline_lock_24"
             android:layout_marginTop="10dp">
 
@@ -112,7 +115,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:hint="@string/confirm_password"
+            app:endIconMode="password_toggle"
             app:errorEnabled="true"
+            app:errorIconDrawable="@null"
             app:startIconDrawable="@drawable/baseline_lock_24"
             android:layout_marginTop="10dp">
 
