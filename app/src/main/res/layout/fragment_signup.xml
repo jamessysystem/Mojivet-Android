@@ -55,78 +55,84 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/namebox"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:hint="@string/first_name"
+            app:errorEnabled="true"
             app:startIconDrawable="@drawable/baseline_person_24">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_signname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'"
-                android:background="@drawable/textborder1"
-                android:textStyle="bold"/>
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailbox"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:hint="@string/email"
+            app:errorEnabled="true"
             app:startIconDrawable="@drawable/baseline_email_24"
             android:layout_marginTop="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_signemail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"
-                android:background="@drawable/textborder1"
-                android:textStyle="bold"/>
+                android:inputType="textEmailAddress"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passbox"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:hint="@string/password"
+            app:errorEnabled="true"
             app:startIconDrawable="@drawable/baseline_lock_24"
             android:layout_marginTop="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_signpass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:background="@drawable/textborder1"
-                android:textStyle="bold"/>
+                android:inputType="textPassword"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/rePassbox"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:hint="@string/confirm_password"
+            app:errorEnabled="true"
             app:startIconDrawable="@drawable/baseline_lock_24"
             android:layout_marginTop="10dp">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_confirmPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:background="@drawable/textborder1"
-                android:textStyle="bold"/>
+                android:inputType="textPassword"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/btn_regis"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:text="@string/sign_up"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:backgroundTint="@color/lavender"/>
 
 
     <androidx.cardview.widget.CardView
@@ -153,6 +159,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/log_inhere"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/log_in_here"
@@ -161,7 +168,6 @@
                 android:textSize="18sp"
                 android:textColor="@color/bright_blue"
                 android:textStyle="bold"/>
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     </LinearLayout>
