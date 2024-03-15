@@ -10,16 +10,15 @@ import android.widget.Spinner
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.DatePicker
-import android.widget.SpinnerAdapter
 import android.widget.TextView
 import com.example.mojivet.R
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 class Appointment : Fragment() {
-    lateinit var tvDate : TextView
-    private lateinit var spinner: Spinner
+    private lateinit var spinnervet: Spinner
+    private lateinit var spinnertype: Spinner
+    private lateinit var spinnertime: Spinner
     private lateinit var datebut: Button
     private val calendar = Calendar.getInstance()
     override fun onCreateView(
@@ -32,18 +31,51 @@ class Appointment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        spinner = view.findViewById(R.id.spin_vet)
+        spinnervet = view.findViewById(R.id.spin_vet)
         datebut = view.findViewById(R.id.spin_date)
+        spinnertype = view.findViewById(R.id.spin_pettype)
+        spinnertime = view.findViewById(R.id.spin_time)
 
 
-        val choices = arrayOf("Veterinarian 1", "Veterinarian 2", "Veterinarian 3")
+        val vetchoices = arrayOf("Veterinarian 1", "Veterinarian 2", "Veterinarian 3")
+        val typeChoices = arrayOf("Cat", "Dog", "Hamster", "Rabbit")
+        val timeChoices = arrayOf("8:00AM - 9:00 AM", "9:00 AM - 10:00 AM", "10:00 AM - 11:00 AM", "11:00 AM - 12:00 PM", "1:00 PM - 2:00 PM", "2:00 PM - 3:00 PM", "3:00 PM - 4:00 PM", "4:00 PM - 5:00 PM")
 
-        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, choices)
+        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, vetchoices)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
-        spinner.adapter = adapter
+        spinnervet.adapter = adapter
+
+        val typeAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, typeChoices)
+        typeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        spinnertype.adapter = typeAdapter
+
+        val timeAdapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, timeChoices)
+        timeAdapter.setDropDownViewResource(android.R.layout.simple_spinner_item)
+        spinnertime.adapter = timeAdapter
+
 
         // Optionally, you can add a listener to handle spinner item selection
-        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+        spinnervet.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                val selectedItem = parent?.getItemAtPosition(position).toString()
+                // Do something with the selected item
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                // Do something when nothing is selected
+            }
+        }
+        spinnertype.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                val selectedItem = parent?.getItemAtPosition(position).toString()
+                // Do something with the selected item
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                // Do something when nothing is selected
+            }
+        }
+        spinnertime.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val selectedItem = parent?.getItemAtPosition(position).toString()
                 // Do something with the selected item
@@ -63,7 +95,7 @@ class Appointment : Fragment() {
             selectedDate.set(year, monthOfYear, dayOfMonth)
             val dateFormat = SimpleDateFormat("MM/dd/yyyy", Locale.getDefault())
             val formattedDate = dateFormat.format(selectedDate.time)
-            tvDate.text = "Selected Date:" + formattedDate
+            datebut.text = "Selected Date:" + formattedDate
         },
             calendar.get(Calendar.YEAR),
             calendar.get(Calendar.MONTH),

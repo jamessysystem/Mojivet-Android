@@ -1,4 +1,4 @@
-package com.example.mojivet.data
+package com.example.mojivet.authentication.data
 
 data class RegistrationRequest(
     val name: String,

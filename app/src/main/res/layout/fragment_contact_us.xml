@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context=".profiling.Signup"
-    android:background="@drawable/gradient_yellow"
-    android:layout_marginTop="-30dp">
+    tools:context=".nav_drawer.Contact_us">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="240dp"
@@ -39,16 +42,13 @@
                 android:textStyle="bold"
                 android:layout_gravity="center"/>
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="35dp"/>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:gravity="center"
                 android:padding="20dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/textborder1">
 
@@ -151,7 +151,6 @@
             android:contentDescription="@string/instagram"/>
 
     </LinearLayout>
+    </LinearLayout>
 
-
-
-</LinearLayout>
+</ScrollView>
