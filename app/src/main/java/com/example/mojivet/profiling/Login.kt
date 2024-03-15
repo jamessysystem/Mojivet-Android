@@ -1,5 +1,6 @@
 package com.example.mojivet.profiling
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -7,7 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.EditText
+import android.widget.TextView
+import com.example.mojivet.MainActivity
 import com.example.mojivet.R
 import com.example.mojivet.authentication.AuthenticationManager
 import com.example.mojivet.authentication.apiretrofit.LoginAPI
@@ -37,6 +39,7 @@ class Login : Fragment() {
         val service = retrofit.create(LoginAPI::class.java)
 
         val btnLogin = view.findViewById<Button>(R.id.btnLogin)
+        val tvsignup = view.findViewById<TextView>(R.id.sign_uphere)
 
         btnLogin.setOnClickListener {
             val email = etEmail.text?.trim().toString()
@@ -71,6 +74,10 @@ class Login : Fragment() {
                             if (receivedUserId != null) {
                                 authManager.storeUserId(receivedUserId)
                             }
+                            val intent = Intent(activity, MainActivity::class.java)
+                            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+                            startActivity(intent)
+                            activity?.finish()
                         }
                     }
 
@@ -79,6 +86,13 @@ class Login : Fragment() {
                     }
                 })
         }
-                return view
+        tvsignup.setOnClickListener {
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.fragment_container, Signup())
+            transaction.addToBackStack(null) // Optional: Adds the transaction to the back stack
+            transaction.commit()
+        }
+
+        return view
     }
 }

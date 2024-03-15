@@ -33,14 +33,4 @@ class AuthenticationManager(private val context: Context) {
         val sharedPreferences = context.getSharedPreferences("pref", Context.MODE_PRIVATE)
         return sharedPreferences.getString("email", null)
     }
-
-    fun storeCompanyId(userId: Int) {
-        val sharedPreferences = context.getSharedPreferences("pref", Context.MODE_PRIVATE)
-        sharedPreferences.edit().putInt("companyId", userId).apply()
-    }
-
-    fun getStoredCompanyId(): Int {
-        val sharedPreferences = context.getSharedPreferences("pref", Context.MODE_PRIVATE)
-        return sharedPreferences.getInt("companyId", 0)
-    }
 }
