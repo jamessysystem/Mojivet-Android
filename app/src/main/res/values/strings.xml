@@ -70,6 +70,8 @@
     <string name="book_an_appointment">Book an Appointment</string>
     <string name="log_in">Log in</string>
     <string name="forgot_pass1">Forgot Password?</string>
+    <string name="edit_prof">Edit Profile</string>
+
 
 
 </resources>
