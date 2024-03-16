@@ -46,6 +46,14 @@ class Login : Fragment() {
 
         val btnLogin = view.findViewById<Button>(R.id.btnLogin)
         val tvsignup = view.findViewById<TextView>(R.id.sign_uphere)
+        val tvforgot = view.findViewById<TextView>(R.id.tv_forgot)
+
+        tvforgot.setOnClickListener {
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.fragment_container, ForgotPassword())
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
 
         btnLogin.setOnClickListener {
             val email = etEmail.text?.trim().toString()

@@ -5,8 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fillViewport="true"
     android:gravity="center"
     tools:context=".profiling.Signup">
+
 
     <ImageView
         android:layout_width="match_parent"
@@ -52,6 +54,19 @@
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowColor="#C0C0C0"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/darken"
+            app:cardCornerRadius="8dp">
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center">
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -138,6 +153,8 @@
         android:layout_marginTop="15dp"
         android:textSize="20sp"
         android:backgroundTint="@color/lavender"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
 
     <androidx.cardview.widget.CardView
@@ -176,7 +193,5 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
     </LinearLayout>
-
-
-</RelativeLayout>
+    </RelativeLayout>
 

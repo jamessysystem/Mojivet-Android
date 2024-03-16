@@ -2,6 +2,7 @@ package com.example.mojivet.nav_bottom
 
 import android.app.DatePickerDialog
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.widget.AdapterView
@@ -11,6 +12,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.example.mojivet.APIAppt.AppointmentAPI
+import com.example.mojivet.AppointmentResult
 import com.example.mojivet.R
 import com.example.mojivet.data.AppointmentDatas
 import com.google.android.material.textfield.TextInputEditText
@@ -23,7 +25,8 @@ import java.sql.Time
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
-import java.util.Date
+import java.time.LocalTime
+
 class Appointment : Fragment() {
     private lateinit var spinnervet: Spinner
     private lateinit var spinnertype: Spinner
@@ -35,6 +38,7 @@ class Appointment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_appointment, container, false)
+
         val retrofit = Retrofit.Builder()
             .baseUrl("http://143.198.95.241/")
             .addConverterFactory(GsonConverterFactory.create())
@@ -53,7 +57,7 @@ class Appointment : Fragment() {
         spinnertime = view.findViewById(R.id.spin_time)
 
         btnSubmit.setOnClickListener {
-            val appointment_time = spinnertime.selectedItem
+            val selectedTime = spinnertime.selectedItem.toString()
             val concern = aptConcern.text?.trim().toString()
             val dateText = datebut.text.toString()
             val dateFormat = SimpleDateFormat("MM/dd/yyyy", Locale.getDefault())
@@ -61,30 +65,19 @@ class Appointment : Fragment() {
             val email = aptEmail.text?.trim().toString()
             val name = aptName.text?.trim().toString()
             val pet_name = aptPetName.text?.trim().toString()
-            val pet_type = spinnertype.selectedItem?.toString()
-            val veterinarian = spinnervet.selectedItem?.toString()
-            val myString = "pending"
-            val user_type = myString
+            val pet_type = spinnertype.selectedItem?.toString()?:""
+            val veterinarian = spinnervet.selectedItem?.toString()?:""
 
+            // Remove the redeclaration of appointment_time here
 
-            val selectedTime = spinnertime.selectedItem.toString()
-
-// Parse the selected time string into a java.sql.Time object
+            // Parse the selected time string into a java.sql.Time object
             val timeFormat = SimpleDateFormat("hh:mm a", Locale.getDefault())
             val parsedTime = timeFormat.parse(selectedTime)
-            val appointmentTime = java.sql.Time(parsedTime.time)
+            val appointmentTime = Time(parsedTime.time) // Change variable name to avoid conflict
 
-// Use appointmentTime in your AppointmentDatas object
+            // Use appointmentTime in your AppointmentDatas object
             val appointmentDatas = AppointmentDatas(
-                appointmentTime as Time,
-                concern,
-                date as Date,
-                email,
-                name,
-                pet_name,
-                pet_type.toString(),
-                veterinarian.toString(),
-                user_type
+                name, email, date, appointmentTime, pet_name, pet_type, veterinarian, concern
             )
 
             service.createAppointment(appointmentDatas)
@@ -95,16 +88,14 @@ class Appointment : Fragment() {
                     ) {
                         (response.isSuccessful)///Success(?)
                         val fragmentTransaction = childFragmentManager.beginTransaction()
-                        fragmentTransaction.add(R.id.resultTextView, AppointmentResult())
+                        fragmentTransaction.add(R.id.nav_appointment, AppointmentResult())
                         fragmentTransaction.addToBackStack(null)
                         fragmentTransaction.commit()
-
                     }
 
                     override fun onFailure(call: Call<AppointmentDatas>, t: Throwable) {
-                        TODO("Not yet implemented")///Failure
+                        Log.e("MyTag", "Network Failed: $call")
                     }
-
                 })
 
 
@@ -148,7 +139,7 @@ class Appointment : Fragment() {
                 position: Int,
                 id: Long
             ) {
-                val selectedItem = parent?.getItemAtPosition(position).toString()
+                parent?.getItemAtPosition(position).toString()
                 // Do something with the selected item
             }
 
